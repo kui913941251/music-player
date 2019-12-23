@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>music player</title>
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/jquery.mCustomScrollbar.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/lyric.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="javascript:;"><img src="img/player_logo.png" alt=""></a>
+    </div>
+    <ul>
+      <li><a href="javascript:;">登录</a></li>
+      <li><a href="javascript:;">设置</a></li>
+    </ul>
+  </header>
+
+  <section class="center">
+    <div class="w">
+      <div class="center-content-left">
+          <div class="center-header">
+            <div class="handle-list">
+              <a href="javascript:;"><i></i>收藏</a>
+              <a href="javascript:;"><i></i>添加到</a>
+              <a href="javascript:;"><i></i>下载</a>
+              <a href="javascript:;"><i></i>删除</a>
+              <a href="javascript:;"><i></i>清空列表</a>
+            </div>
+          </div>
+          <div class="music-list-box  mCustomScrollbar" data-mcs-theme="minimal-dark">
+            <ul class="music-list">
+              <li>
+                <div class="music-item-choose"><a href="javascript:;"><i></i></a></div>
+                <div class="music-item-number"><a></a></div>
+                <div class="music-item-name"><a>歌曲名</a></div>
+                <div class="music-item-singer"><a>歌手名</a></div>
+                <div class="music-item-time"><span>时间</span></div>
+              </li>
+<!--              <li class="music-list-item">-->
+<!--                <div class="music-item-choose"><a href="javascript:;"><i class="checked"></i></a></div>-->
+<!--                <div class="music-item-number play-now" >1</div>-->
+<!--                <div class="music-item-name">-->
+<!--                  <a>夜曲</a>-->
+<!--                  <div class="music-item-icon">-->
+<!--                    <a href="javascript:;" class="music-item-play play-now"></a>-->
+<!--                    <a href="javascript:;" class="music-item-add"></a>-->
+<!--                    <a href="javascript:;" class="music-item-download"></a>-->
+<!--                    <a href="javascript:;" class="music-item-share"></a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="music-item-singer"><a href="javascript:;">周杰伦</a></div>-->
+<!--                <div class="music-item-time"><span>03:55</span><a href="javascript:;" class="music-item-delete a-i-fade-show"></a></div>-->
+<!--              </li>-->
+            </ul>
+          </div>
+    </div>
+      <div class="center-content-right">
+        <div class="music-info">
+          <div class="music-info-img">
+            <img src="source/告白气球.jpg" alt="" class="music-info-img-main">
+            <img src="img/album_cover_player.png" alt="" class="music-info-img-side">
+          </div>
+          <div class="music-info-text">
+            <p class="music-info-text-name">歌曲名：<a href="javascripot:;">告白气球</a></p>
+            <p class="music-info-text-singer">歌手名：<a href="javascript:;">周杰伦</a></p>
+            <p class="music-info-text-album">专辑名：<a href="javascripot:;">周杰伦的床边故事</a></p>
+          </div>
+        </div>
+        <div class="music-lyric">
+          <div class="music-lyric-box">
+            <p class="current-lyric">第一句</p>
+            <p>第二句</p>
+            <p>第二句</p>
+            <p>第二句</p>
+            <p>第二句</p>
+            <p>第二句</p>
+            <p>第二句</p>
+            <p>第二句</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-player">
+    <div class="player-control">
+      <a href="javascript:;" class="player-control-prev"></a>
+      <a href="javascript:;" class="player-control-pause"></a>
+      <a href="javascript:;" class="player-control-next"></a>
+    </div>
+    <div class="player-music">
+      <div class="player-music-info">
+        <div class="player-music-name">12</div> &thinsp; - &thinsp;
+        <div class="player-music-singer">12</div>
+        <div class="player-music-time"><span class="now-time">00:00</span> / <span class="total-time">00:00</span></div>
+      </div>
+      <div class="music-lyric-progress">
+        <div class="lyric-progress-longer"></div>
+        <div class="lyric-progress-shorter">
+          <a class="lyric-progress-dot"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-player-right">
+      <a href="javascript:;" class="footer-play-mode"></a>
+      <a href="javascript:;" class="footer-like"></a>
+      <a href="javascript:;" class="footer-download"></a>
+      <a href="javascript:;" class="footer-comment"></a>
+      <a href="javascript:;" class="footer-pure"></a>
+      <div class="footer-volume-tools">
+        <a href="javascript:;" class="footer-volume-control"></a>
+        <div class="footer-volume-progress">
+          <div class="volume-progress-longer"></div>
+          <div class="volume-progress-shorter">
+            <a class="volume-progress-dot"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-cover"></div>
+  <div class="mask"></div>
+  <div class="pure-on-mask"></div>
+  <audio src=""></audio>
+</body>
+</html>

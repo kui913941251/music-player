@@ -1,0 +1,83 @@
+[
+  {
+    "name":"告白气球",
+    "singer": "周杰伦",
+    "album": "周杰伦的床边故事",
+    "time": "03:35",
+    "link_url":"./source/告白气球.mp3",
+    "cover":"./source/告白气球.jpg",
+    "link_lrc":"./source/告白气球.txt"
+  },
+  {
+    "name":"Something Just Like This",
+    "singer": "Chainsmokers",
+    "album": "Something Just Like This",
+    "time": "04:07",
+    "link_url":"./source/SomethingJustLikeThis.mp3",
+    "cover":"./source/SomethingJustLikeThis.jpg",
+    "link_lrc":"./source/SomethingJustLikeThis.txt"
+  },
+  {
+    "name":"Your Song",
+    "singer": "Lady Gaga",
+    "album": "Your Song",
+    "time": "04:16",
+    "link_url":"./source/YourSong.mp3",
+    "cover":"./source/YourSong.jpg",
+    "link_lrc":"./source/YourSong.txt"
+  },
+  {
+    "name":"凉凉",
+    "singer": "杨宗纬/张碧晨",
+    "album": "凉凉",
+    "time": "05:00",
+    "link_url":"./source/凉凉.mp3",
+    "cover":"./source/凉凉.jpg",
+    "link_lrc":"./source/凉凉.txt"
+  },
+  {
+    "name":"广东爱情故事",
+    "singer": "广东雨神",
+    "album": "广东爱情故事",
+    "time": "03:34",
+    "link_url":"./source/广东爱情故事.mp3",
+    "cover":"./source/广东爱情故事.jpg",
+    "link_lrc":"./source/广东爱情故事.txt"
+  },
+  {
+    "name":"说散就散",
+    "singer": "袁娅维",
+    "album": "说散就散",
+    "time": "04:02",
+    "link_url":"./source/说散就散.mp3",
+    "cover":"./source/说散就散.jpg",
+    "link_lrc":"./source/说散就散.txt"
+  },
+  {
+    "name":"命は美しい (生命的美好)",
+    "singer": "乃木坂46 (のぎざか フォーティシックス)",
+    "album": "命は美しい(通常盤)",
+    "time": "05:15",
+    "link_url":"./source/命は美しい (生命的美好).mp3",
+    "cover":"./source/命は美しい (生命的美好).jpg",
+    "link_lrc":"./source/命は美しい (生命的美好).txt"
+  },
+  {
+    "name":"君の名は希望 (你就是希望)",
+    "singer": "乃木坂46 (のぎざか フォーティシックス)",
+    "album": "君の名は希望(Type-A)",
+    "time": "05:25",
+    "link_url":"./source/君の名は希望 (你就是希望).mp3",
+    "cover":"./source/君の名は希望 (你就是希望).jpg",
+    "link_lrc":"./source/君の名は希望 (你就是希望).txt"
+  },
+  {
+    "name":"何度目の青空か(第几次的蓝天)",
+    "singer": "乃木坂46 (のぎざか フォーティシックス)",
+    "album": "何度目の青空か?(Type-A)",
+    "time": "04:49",
+    "link_url":"./source/何度目の青空か(第几次的蓝天).mp3",
+    "cover":"./source/何度目の青空か(第几次的蓝天).jpg",
+    "link_lrc":"./source/何度目の青空か(第几次的蓝天).txt"
+  }
+]

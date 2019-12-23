@@ -1,0 +1,506 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    font-size: 14px;
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.pure-on-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
+    display: none;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+}
+.bg-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background: url("../source/告白气球.jpg") no-repeat;
+    background-size: cover;
+    filter: blur(100px);
+    transition: 1s;
+    animation: changeBlur infinite 5s linear;
+}
+@keyframes changeBlur {
+    0%{
+        filter: blur(100px);
+    }
+    50%{
+        filter: blur(30px);
+    }
+    100%{
+        filter: blur(100px);
+    }
+}
+.header{
+    height: 60px;
+    line-height: 60px;
+}
+.header .logo{
+    float: left;
+    margin-left: 20px;
+    opacity: .5;
+}
+.header .logo:hover{
+    opacity: 1;
+}
+.header ul{
+    float: right;
+    margin-right: 30px;
+}
+.header ul li{
+    float: left;
+    margin-right: 10px;
+    color: #fff;
+    opacity: 0.5;
+}
+.header ul li:hover{
+    opacity: 1;
+}
+.center{
+    width: 100%;
+    height: calc(80% - 60px);
+}
+.center .w{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.center-content-left{
+    box-sizing: border-box;
+    width: 800px;
+    height: 100%;
+    float: left;
+}
+.center-header{
+    overflow: hidden;
+}
+.center-header .handle-list{
+    padding: 20px 0;
+}
+.center-header .handle-list a{
+    display: block;
+    float: left;
+    border: 1px solid #fff;
+    width: 130px;
+    text-align: center;
+    padding: 7px 0;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+.center-header .handle-list a:hover{
+    opacity: 1;
+}
+.center-header .handle-list a i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon_sprite.png") no-repeat -60px -20px;
+    vertical-align: -7px;
+}
+.center-header .handle-list a:nth-child(2) i{
+    background: url("../img/icon_sprite.png") no-repeat -20px -20px;
+}
+.center-header .handle-list a:nth-child(3) i{
+    background: url("../img/icon_sprite.png") no-repeat -40px -240px;
+}
+.center-header .handle-list a:nth-child(4) i{
+    background: url("../img/icon_sprite.png") no-repeat -100px -20px;
+}
+.center-header .handle-list a:nth-child(5) i{
+    background: url("../img/icon_sprite.png") no-repeat -40px -300px;
+}
+.music-list-box{
+    position: relative;
+    height: calc(100% - 58px);
+}
+.music-list{
+    margin-top: 20px;
+    overflow: auto;
+}
+.music-list > li{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+    user-select: none;
+}
+.music-list > li > div{
+}
+.music-list .music-item-choose{
+    width: 30px;
+}
+.music-list .music-item-choose i{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    vertical-align: -3px;
+    margin-left: 10px;
+    opacity: .5;
+}
+.music-list .music-item-choose i:hover{
+    opacity: 1;
+}
+.music-list .music-item-choose i.checked{
+    opacity: 1;
+    background: url("../img/icon_sprite.png") no-repeat -60px -80px;
+}
+.music-list .music-item-number{
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    color: rgba(255,255,255,.5);
+}
+.music-list .music-item-number.play-now{
+    color: rgba(255,255,255,0);
+    background: url("../img/wave.gif") no-repeat center center;
+}
+.music-list .music-item-name{
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+}
+.music-item-name .music-item-icon{
+    display: none;
+    float: right;
+}
+.music-item-name > a{
+    color: rgba(255,255,255,.5);
+}
+.music-item-name .music-item-icon{
+
+}
+.music-item-name .music-item-icon a{
+    display: inline-block;
+    opacity: .5;
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+}
+.music-item-name .music-item-icon a:hover{
+    opacity: 1;
+}
+.music-item-name .music-item-play{
+    background: url("../img/icon_list_menu.png") no-repeat -120px 0;
+}
+.music-item-name .music-item-play.play-now{
+    background: url("../img/icon_list_menu.png") no-repeat -120px -200px;
+}
+
+.music-item-name .music-item-add{
+    background: url("../img/icon_list_menu.png") no-repeat -120px -80px;
+}
+.music-item-name .music-item-download{
+    background: url("../img/icon_list_menu.png") no-repeat -120px -120px;
+}
+.music-item-name .music-item-share{
+    background: url("../img/icon_list_menu.png") no-repeat -120px -40px;
+}
+.music-list .music-item-singer{
+    width: 200px;
+}
+.music-list .music-item-singer a{
+    color: rgba(255,255,255,.5);
+}
+.music-list li:nth-child(n + 2) .music-item-singer a:hover{
+    opacity: 1;
+}
+.music-list .music-item-time{
+    line-height: 50px;
+}
+.music-item-time span{
+    opacity: .5;
+}
+.music-item-time a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icon_list_menu.png") no-repeat -120px -160px;
+    vertical-align: middle;
+    opacity: .5;
+}
+.music-item-time a:hover{
+    opacity: 1;
+}
+.music-item-time .a-i-fade-show{
+    display: none;
+}
+.center-content-right{
+    box-sizing: border-box;
+    width: 340px;
+    height: 100%;
+    float: right;
+    padding-top: 20px;
+}
+.music-info-img{
+    position: relative;
+    text-align: center;
+}
+.music-info-img-main{
+    display: inline-block;
+    width: 186px;
+    height: 186px;
+}
+.music-info-img-side{
+    position: absolute;
+    left: 86px;
+}
+.music-info-text{
+    text-align: center;
+    margin-top: 5px;
+    color: #fff;
+    user-select: none;
+}
+.music-info-text p{
+    padding-top: 5px;
+    color: rgba(255,255,255,.5);
+}
+.music-info-text p a{
+    color: rgba(255,255,255,.5);
+}
+.music-info-text p a:hover{
+    color: rgba(255,255,255,1);
+}
+.music-lyric{
+    margin-top: 50px;
+    height: 200px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+.music-lyric-box{
+    margin-top: 80px;
+    transition: 0.3s;
+}
+.music-lyric-box p{
+    line-height: 40px;
+    font-size: 15px;
+    opacity: .5;
+    transition: 0.3s;
+}
+.music-lyric-box p.current-lyric{
+    font-size: 20px;
+    color: #31c27c;
+    opacity: 1;
+}
+
+/* 下面为开启纯净模式的样式 */
+.music-lyric.pure-on{
+    position: absolute;
+    height: auto;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.music-lyric.pure-on .music-lyric-box{
+    margin-top: 280px;
+}
+.music-lyric.pure-on .music-lyric-box p{
+    font-size: 25px;
+    line-height: 60px;
+}
+.music-lyric.pure-on .music-lyric-box p.current-lyric{
+    font-size: 35px;
+}
+/* 纯净模式的样式完 */
+
+.footer-player{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    z-index: 100;
+}
+.player-control{
+    display: flex;
+}
+.player-control a{
+    display: inline-block;
+}
+.player-control-prev{
+    width: 20px;
+    height: 22px;
+    background: url("../img/player.png") 0 -29px;
+    margin-top: 5px;
+}
+.player-control-pause{
+    width: 25px;
+    height: 30px;
+    background: url("../img/player.png") no-repeat 0px 0px;
+    margin: 0 15px 0 20px;
+}
+.player-control-pause.play-now{
+    background: url("../img/player.png") no-repeat -29px 0px;
+}
+.player-control-next{
+    width: 20px;
+    height: 22px;
+    background: url("../img/player.png") 0 -51px;
+    margin-top: 5px;
+}
+.player-music{
+    margin-left: 25px;
+}
+.player-music-info{
+    position: relative;
+    display: flex;
+    width: 630px;
+    color: #fff;
+}
+.player-music-time{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.music-lyric-progress{
+    position: relative;
+    width: 630px;
+    height: 10px;
+    margin-top: 10px;
+}
+.lyric-progress-longer{
+    width: 100%;
+    height: 2px;
+    background: rgba(255,255,255,.2);
+}
+.lyric-progress-shorter{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 2px;
+    background: rgba(255,255,255,1);
+}
+.lyric-progress-dot{
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    user-select: none;
+}
+.footer-player-right{
+    margin-left: 20px;
+}
+.footer-player-right > a{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-play-mode{
+    width: 27px;
+    height: 24px;
+    background-image:  url("../img/player.png");
+    background-repeat: no-repeat;
+    background-position: 0 -205px;
+}
+
+/* 添加播放模式切换的图片 */
+.footer-play-mode.singer{
+    background: url("../img/player.png") no-repeat 0 -232px;
+}
+.footer-play-mode.random{
+    background: url("../img/player.png") no-repeat 0 -74px;
+}
+
+/* 播放模式切换的图片结束 */
+
+
+.footer-like{
+    width: 24px;
+    height: 22px;
+    background: url("../img/player.png") no-repeat 0 -95px;
+}
+.footer-download{
+    width: 22px;
+    height: 21px;
+    background: url("../img/player.png") no-repeat 0 -120px;
+}
+.footer-comment{
+    width: 23px;
+    height: 23px;
+    background: url("../img/player.png") no-repeat 0 -400px;
+}
+ .footer-pure{
+     width: 74px;
+     height: 26px;
+     background: url("../img/player.png") no-repeat 0 -282px;
+ }
+.footer-pure.pure-on{
+    background: url("../img/player.png") no-repeat 0 -311px;
+}
+ .footer-volume-tools{
+     float: right;
+     display: flex;
+     align-items: center;
+ }
+ .footer-volume-control{
+     display: inline-block;
+     width: 25px;
+     height: 22px;
+     background: url("../img/player.png") no-repeat 0 -143px;
+ }
+ .footer-volume-progress{
+     position: relative;
+     width: 80px;
+     height: 5px;
+     margin-left: 10px;
+ }
+ .volume-progress-longer{
+     width: 100%;
+     height: 2px;
+     background: rgba(255,255,255,.2);
+ }
+ .volume-progress-shorter{
+     position: absolute;
+     top: 0;
+     width: 50px;
+     height: 2px;
+     background: rgba(255,255,255,1);
+ }
+ .volume-progress-dot{
+     position: absolute;
+     top: -4px;
+     right: -4px;
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background: #fff;
+     user-select: none;
+ }
